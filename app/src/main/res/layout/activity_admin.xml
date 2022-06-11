@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup"
+    tools:context=".admin">
+
+    <TextView
+        android:id="@+id/admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta"
+        android:text="Manager view"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13999999" />
+
+    <TextView
+        android:id="@+id/opentxt"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:text="is open"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin"
+        android:layout_marginTop="160dp"
+        android:textSize="21sp"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/moneytxt"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:text="has money"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/opentxt"
+        android:textSize="21sp"
+        android:layout_marginBottom="315dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/moneytxt2"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:text="ATM has money"
+        android:textColor="@color/white"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/atmstat" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="80dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="70dp"
+        android:background="@color/white"
+        android:text="OK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/moneytxt"
+        app:layout_constraintStart_toStartOf="@+id/moneytxt"
+        app:layout_constraintTop_toBottomOf="@+id/moneytxt" />
+
+    <CheckBox
+        android:id="@+id/open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/opentxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/opentxt"
+        app:layout_constraintTop_toTopOf="@+id/opentxt" />
+
+    <CheckBox
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/moneytxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/moneytxt"
+        app:layout_constraintTop_toTopOf="@+id/moneytxt" />
+
+    <TextView
+        android:id="@+id/network"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Network"
+        android:textColor="@color/white"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="@+id/moneytxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moneytxt" />
+
+    <TextView
+        android:id="@+id/atmstat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="ATM stat"
+        android:textColor="@color/white"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="@+id/moneytxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/network" />
+
+    <CheckBox
+        android:id="@+id/net"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/network"
+        app:layout_constraintEnd_toEndOf="@+id/open"
+        app:layout_constraintStart_toStartOf="@+id/open"
+        app:layout_constraintTop_toTopOf="@+id/network" />
+
+    <CheckBox
+        android:id="@+id/atmcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/atmstat"
+        app:layout_constraintEnd_toEndOf="@+id/open"
+        app:layout_constraintStart_toStartOf="@+id/open"
+        app:layout_constraintTop_toTopOf="@+id/atmstat" />
+
+    <CheckBox
+        android:id="@+id/atmmoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/moneytxt2"
+        app:layout_constraintEnd_toEndOf="@+id/open"
+        app:layout_constraintStart_toStartOf="@+id/open"
+        app:layout_constraintTop_toTopOf="@+id/moneytxt2" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="80dp"
+        android:layout_height="33dp"
+        android:background="@color/white"
+        android:onClick="goadd"
+        android:text="add"
+        app:layout_constraintBottom_toBottomOf="@+id/ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/moneytxt"
+        app:layout_constraintTop_toTopOf="@+id/ok" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

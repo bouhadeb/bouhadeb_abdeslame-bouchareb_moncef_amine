@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "219013640369",
+    "project_id": "userlogin-88bb7",
+    "storage_bucket": "userlogin-88bb7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219013640369:android:0c96a7190a798a7e7a3290",
+        "android_client_info": {
+          "package_name": "com.best.userlogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219013640369-k0t0cc24hln6g2g1og7965e5mqmmgfj2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrwmI9ZN2Booe7YUQl191HRhhoMQJn4Cc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219013640369-k0t0cc24hln6g2g1og7965e5mqmmgfj2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
